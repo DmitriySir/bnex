@@ -1,29 +1,83 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <title>Бюро независимой экспертизы</title>
-        <meta charset='utf-8'>
-        <link rel="stylesheet" href="css/style.css">
-         <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
-    </head>
-<body>
-    <!--
+  <head>
+    <title>Бюро независимой экспертизы</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta
+      name="viewport"
+      content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1"
+    />
+  </head>
+  <body>
     <div class="form">
-        <div class="form__up">
-            <div class="form__closer">+</div>
+        <div class="form__wrapper">
+      <div class="form__up">
+        <div class="form__closer">+</div>
+      </div>
+      <form action="#" class="form__body" id="form">
+        <div class="form__item">
+          <label for="formEmail" class="form__label">Email*:</label>
+          <input
+            id="formEmail"
+            type="text"
+            name="email"
+            class="form__input __req __email"
+            placeholder="Ваш E-mail"
+          />
         </div>
-        <form action="#" class="form__body" id="form">
-            <div class="form__item">
-                <label for="formEmail" class="form__label">Email*:</label>
-                <input id="formEmail" type="text" name="email" class="form__imput">
-            </div>
-            <div class="form__item">
-                <label for="formName" class="form__label">Имя*:</label>
-                <input id="formEName" type="text" name="name" class="form__name">
-            </div>
-        </form>
+        <div class="form__item">
+          <label for="formName" class="form__label">Имя*:</label>
+          <input
+            id="formEName"
+            type="text"
+            name="name"
+            class="form__input  __req __name"
+            placeholder="Ваше имя"
+          />
+        </div>
+        <div class="form__item">
+          <div class="form__label" id="select">Вид услуги:</div>
+          <select name="service" class="select">
+            <option value="Выбрать услугу" selected>Выбрать услугу</option>
+            <option value="Строительная экспертиза">Строительная экспертиза</option>
+            <option value="Экономическая экспертиз">Экономическая экспертиза</option>
+            <option value="Психологическая экспертиз">Психологическая экспертиза</option>
+            <option value="Автотехническая экспертиза">Автотехническая экспертиза</option>
+            <option value="Компьютерно-техническая экспертиза">Компьютерно-техническая экспертиза</option>
+            <option value="Экологическая экспертиза">Экологическая экспертиза</option>
+            <option value="Биологическая экспертиза">Биологическая экспертиза</option>
+            <option value="Сельскохозяйственная экспертиз">Сельскохозяйственная экспертиза</option>
+            <option value="Оценочная экспертиз">Оценочная экспертиза</option>
+            <option value="Товароведческая экспертиза">Товароведческая экспертиза</option>
+            <option value="Лингвистическая экспертиза">Лингвистическая экспертиза</option>
+            <option value="Землеустроительная экспертиз">Землеустроительная экспертиза</option>
+            <option value="Рецензирование досудебных и судебных экспертиз">
+              Рецензирование досудебных и судебных экспертиз
+            </option>
+            <option value="Финансово-экономическая экспертиз">Финансово-экономическая экспертиза</option>
+          </select>
+        </div>
+        <div class="form__item">
+          <label for="formPhone" class="form__label">Телефон*:</label>
+          <input 
+            id="formPhone"
+            type="tel"
+            name="name"
+            class="form__input __req __phone"
+            placeholder="Ваш номер телефона"
+          />
+          <button type="submit" class="form__submit">Отправить</button>
+        </div>
+        
+        <div class="form__agrement">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с <a href="#">политикой конфиденциальности</a></div>
+        
+        
+      </form>
     </div>
-    -->
+    </div>
+
+    
     <div class="circus"></div>
     
     <header class="header">
@@ -234,9 +288,6 @@
 </section>
 
 
-
-<script src="js/script.js"></script>
-    
-</body>
-
+    <script src="js/script.js"></script>
+  </body>
 </html>
