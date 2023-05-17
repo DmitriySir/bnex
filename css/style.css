@@ -2013,3 +2013,16 @@ a{
 .nav a{
   color: white;
 }
+
+@media(min-width: 768px){
+  .form{
+    left: 40%
+  }
+
+  .form__active{
+    visibility: visible;
+    position: absolute;
+    opacity: 1;
+    cursor: pointer;
+    z-index: 10;
+  }
