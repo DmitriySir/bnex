@@ -1995,7 +1995,7 @@ a{
   visibility: hidden;
   position: absolute;
   opacity: 1;
-  left: 40%;
+  left: 0;
 }
 
 .form__active{
@@ -2026,3 +2026,4 @@ a{
     cursor: pointer;
     z-index: 10;
   }
+}
